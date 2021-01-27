@@ -18,9 +18,21 @@ language: java
 matrix:
   include:
     - jdk: openjdk8
+      arch: amd64
     - jdk: openjdk11
+      arch" amd64
     - jdk: openjdk15
+      arch: amd64
     - jdk: openjdk-ea
+      arch: amd64
+    - jdk: openjdk8
+      arch: ppc64le
+    - jdk: openjdk11
+      arch" ppc64le
+    - jdk: openjdk15
+      arch: ppc64le
+    - jdk: openjdk-ea
+      arch: ppc64le
   allow_failures:
     - jdk: openjdk-ea
 script:
